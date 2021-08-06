@@ -5,5 +5,5 @@ export default props => {
         return props.children;
     } else {
         return false;
-    }
-} 
+    };
+};
