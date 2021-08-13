@@ -27,6 +27,13 @@ export function create(values) {
             })
             .catch(e => {
                 e.response.data.errors.forEach(error => toastr.error('Erro', error));
-            })
-    }
+            });
+    };
+};
+
+export function showUpdate(billingCycle) {
+    return [
+        showTabs('tabUpdate'),
+        selectTab('tabUpdate'),
+    ]
 };
