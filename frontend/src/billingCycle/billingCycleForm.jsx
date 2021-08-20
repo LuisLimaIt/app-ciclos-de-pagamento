@@ -39,7 +39,7 @@ class BillingCycleForm extends Component {
 };
 
 BillingCycleForm = reduxForm({form: 'billingCycleForm', destroyOnUnmount: false})(BillingCycleForm);
-const selector = formValueSelector('billingCycleform');
+const selector = formValueSelector('billingCycleForm');
 const mapStateToProps = state => ({credits: selector(state, 'credits')});
 const mapDispatchToProps = dispatch => bindActionCreators({init}, dispatch);
 export default connect(mapStateToProps, mapDispatchToProps)(BillingCycleForm);
