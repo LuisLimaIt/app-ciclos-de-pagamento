@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-module.exports = mongoose.connect('mongodb://localhost/mymoney', { useNewUrlParser: true} );
+module.exports = mongoose.connect('mongodb+srv://luislimait:jMxdesDHuvnso6Bv@mymoney-backend.gknf0.mongodb.net/MyMoney_Backend?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
 
 mongoose.Error.messages.general.required = "O atributo '{PATH}' é obrigatório.";
 mongoose.Error.messages.Number.min = 
